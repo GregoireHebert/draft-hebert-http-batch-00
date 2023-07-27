@@ -19,22 +19,22 @@
 # Change the file extension to match the format (.xml for XML, etc...)
 #
 ###
-title: "TODO - Your title"
-abbrev: "TODO - Abbreviation"
-category: info
+title: "HTTP Batched Request Format"
+abbrev: "HTTP BATCH"
+category: std
 
-docname: draft-todo-yourname-protocol-latest
+docname: draft-hebert-http-batch-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
-number:
-date:
+number: 1
+date: 2023
 consensus: true
 v: 3
-area: AREA
+area: Application
 workgroup: WG Working Group
 keyword:
- - next generation
- - unicorn
- - sparkling distributed ledger
+ - I-D
+ - http
+ - batch
 venue:
   group: WG
   type: Working Group
@@ -45,9 +45,9 @@ venue:
 
 author:
  -
-    fullname: Your Name Here
-    organization: Your Organization Here
-    email: your.email@example.com
+    fullname: Grégoire Hébert
+    organization: Les-Tilleuls.coop
+    email: gregoire@les-tilleuls.coop
 
 normative:
 
@@ -56,7 +56,8 @@ informative:
 
 --- abstract
 
-TODO Abstract
+This document specifies a format for packaging multiple, independent
+HTTP requests into a single payload.
 
 
 --- middle
