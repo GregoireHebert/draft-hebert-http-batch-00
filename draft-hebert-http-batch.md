@@ -82,7 +82,7 @@ of the sub requests, but the server MAY NOT be able.
 
 In addition to The header fields that begin with "Content-", each sub request MUST redefine
 the start-line, with its own verb, URL, headers, and body. The type parameter of the content type
-and each sub request MUST use the application/http Content-Type as specified by Section 19.1 of [RFC2616].
+and each sub request MUST use the application/http Content-Type as specified by Section 10.1 of [RFC9112].
 The HTTP request MUST only contain the path portion of the URL; full URLs are not allowed in batch requests.
 The HTTP headers for the outer batch request, except for the Content- headers such as Content-Type,
 apply to every request in the batch. If you specify a given HTTP header in both
@@ -97,7 +97,7 @@ are valid but are assigned no meaning and thus MUST be ignored by processors of 
 The body of a batch request is made of a series of individual requests and change sets,
 each represented as a distinct MIME part (i.e. separated by the boundary defined in the Content-Type header).
 Each individual HTTP requests and response messages MUST be encapsulated using
-the application/http Content-Type as specified by Section 19.1 of [RFC2616]. Each part MUST specify
+the application/http Content-Type as specified by Section 10.1 of [RFC9112]. Each part MUST specify
 a Content-ID header specifying a reference identifier for the HTTP request message.
 
 ```
