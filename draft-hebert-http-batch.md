@@ -268,6 +268,7 @@ Content-Type: application/problem+json
 
 <JSON representation>
 --batch--
+```
 
 If the Content-Type is set to multipart/mixed, the server's response is a single standard
 HTTP response with a multipart/mixed content type; each part is the response to one of the requests
